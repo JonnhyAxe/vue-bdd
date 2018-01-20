@@ -8,6 +8,7 @@
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
     "lint_fix": "npm run lint -- --fix",
+    "cucumber": "./node_modules/.bin/babel-node --presets node6 node_modules/cucumber/bin/cucumber.js",
     {{#if_eq runner "jest"}}
     "unit": "jest --config test/unit/jest.conf.js --coverage",
     {{/if_eq}}
