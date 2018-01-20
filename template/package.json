@@ -32,6 +32,9 @@
     {{/store}}
   },
   "devDependencies": {
+    {{#cucumber}}
+    "cucumber": "^3.2.0",
+    {{/cucumber}}
     {{#lint}}
     "babel-eslint": "^8.2.1",
     "eslint": "^4.15.0",

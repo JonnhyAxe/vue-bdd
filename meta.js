@@ -106,6 +106,11 @@ module.exports = {
         },
       ],
     },
+    cucumber: {
+      when: 'isNotTest',
+      type: 'confirm',
+      message: 'Use cucumber for BDD?',
+    },
     unit: {
       when: 'isNotTest',
       type: 'confirm',
