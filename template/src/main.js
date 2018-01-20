@@ -9,6 +9,7 @@ import App from './App';
 {{#router}}
 import router from './router';
 {{/router}}
+import store from './store';
 
 Vue.use(Vuetify);
 
@@ -19,6 +20,7 @@ new Vue({
   el: '#app',
   {{#router}}
   router,
+  store,
   {{/router}}
   {{#if_eq build "runtime"}}
   render: h => h(App)
