@@ -48,15 +48,18 @@
 
 <script>
 {{#unless router}}
-import HomeView from './components/HomeView'
+import HomeView from './components/HomeView';
 
 {{/unless}}
 export default {
   name: 'App'{{#router}}{{else}},
   components: {
     HomeView
-  }{{/router}}
-}
+  },{{/router}}
+  data: () => {
+    drawer: null,
+  },
+};
 </script>
 
 <style>
