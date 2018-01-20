@@ -9,7 +9,7 @@ export default new Router({
     {
       path: '/',
       name: 'HomeView',
-      component: HomeView
-    }
-  ]
+      component: HomeView,
+    },
+  ],
 });

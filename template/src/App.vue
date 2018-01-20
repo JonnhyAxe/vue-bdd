@@ -52,13 +52,13 @@ import HomeView from './components/HomeView';
 
 {{/unless}}
 export default {
-  name: 'App'{{#router}}{{else}},
+  name: 'App',{{#router}}{{else}}
   components: {
     HomeView
   },{{/router}}
-  data: () => {
+  data: () => ({
     drawer: null,
-  },
+  }),
 };
 </script>
 
