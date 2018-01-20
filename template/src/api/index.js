@@ -21,4 +21,9 @@ const fetchMessages = new Promise((resolve) => {
   }, 500);
 });
 
-export default { fetchMessages };
+const fetchProducts = {};
+
+export default {
+  fetchMessages,
+  fetchProducts,
+};
