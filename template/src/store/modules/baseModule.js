@@ -1,3 +1,5 @@
+import { fetchMessages } from '@/api';
+
 const defaultState = {
   messages: [],
 };
