@@ -5,12 +5,21 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex';
 export default {
   name: 'HomeView',
   data() {
     return {
       msg: 'Welcome to Your Vue.js App',
     };
+  },
+  computed: {
+    ...mapGetters({
+      messages: 'messages',
+    }),
+  },
+  mounted() {
+    this.$store.dispatch('getMessages');
   },
 };
 </script>
