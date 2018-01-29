@@ -26,8 +26,8 @@ function fetchMessages() {
 const fetchProducts = '';
 
 const apiModule = {
-  fetchMessages: fetchMessages,
-  fetchProducts: fetchProducts,
+  fetchMessages,
+  fetchProducts,
 };
 
 export default apiModule;

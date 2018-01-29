@@ -20,7 +20,7 @@ export default {
     }),
   },
   mounted() {
-    this.$store.dispatch('getMessages');
+    this.$store.dispatch('base/getMessages');
   },
 };
 </script>
