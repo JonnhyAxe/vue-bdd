@@ -1,8 +1,7 @@
-# vue-webpack-boilerplate
+# vue-bdd-boilerplate
 
-> A full-featured Webpack setup with hot-reload, lint-on-save, unit testing & css extraction.
-
-> This template is Vue 2.0 compatible. For Vue 1.x use this command: `vue init webpack#1.0 my-project`
+> A full-featured Webpack setup based on vuejs-templates/webpack.
+> This template is Vue 2.0 compatible.
 
 ## Documentation
 
@@ -14,20 +13,8 @@
 This is a project template for [vue-cli](https://github.com/vuejs/vue-cli). **It is recommended to use npm 3+ for a more efficient dependency tree.**
 
 ``` bash
-$ npm install -g vue-cli
-$ vue init webpack my-project
-$ cd my-project
-$ npm install
-$ npm run dev
+$ vue init Techroombyjp/vue-bdd my-project
 ```
-
-This will scaffold the project using the `master` branch. If you wish to use the latest version of the webpack template, do the following instead:
-
-``` bash
-$ vue init webpack#develop my-project
-```
-
-:warning: **The develop branch is not considered stable and can contain bugs or not build at all, so use at your own risk.**
 
 The development server will run on port 8080 by default. If that port is already in use on your machine, the next free port will be used.
 
@@ -47,15 +34,10 @@ The development server will run on port 8080 by default. If that port is already
   - Static assets compiled with version hashes for efficient long-term caching, and an auto-generated production `index.html` with proper URLs to these generated assets.
   - Use `npm run build --report`to build with bundle size analytics.
 
-- `npm run unit`: Unit tests run in [JSDOM](https://github.com/tmpvar/jsdom) with [Jest](https://facebook.github.io/jest/), or in PhantomJS with Karma + Mocha + karma-webpack.
+- `npm run cucumber`: BDD tests with [Cucumber](https://github.com/cucumber/cucumber-js)
   - Supports ES2015+ in test files.
-  - Easy mocking.
+  - Vuex store integrated.
 
-- `npm run e2e`: End-to-end tests with [Nightwatch](http://nightwatchjs.org/).
-  - Run tests in multiple browsers in parallel.
-  - Works with one command out of the box:
-    - Selenium and chromedriver dependencies automatically handled.
-    - Automatically spawns the Selenium server.
 
 ### Fork It And Make Your Own
 
