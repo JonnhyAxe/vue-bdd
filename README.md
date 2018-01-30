@@ -1,16 +1,29 @@
-# vue-bdd-boilerplate
+# Vue BDD Boilerplate
 
 A template to develop applications in BDD method using Cucumber. A perfect place to get you started in learning test driven development :rocket:.
 
 
 > A full-featured Webpack setup based on vuejs-templates/webpack.
+
 > This template is Vue 2.0 compatible.
 
 ## Architecture/Concept
-This architecture is aimed to provide a simple to understand and use environment for learning BDD using Vuejs. A full featured, advanced environment is omitted on purpose. Why? To simplify the flow, and focus on one thing! That is understanding how user stories, features and test driven development works. The goal is to get a firm grasp of the concepts behind developing apps based on BDD..
+The template consists of the following 4 main parts:
+* Vuejs
+* Vuetifyjs
+* Vuex
+* Cucumber
+
+The Vuex store is configured based on a namespaced and modular architecture. At the moment `state, actions, mutations` and `getters` are all stored in one file. This can be further broken down into separate files when the application gets larger.
+
+For the cucumber part, the individual store module to be used for testing is imported into the world, and next a Vuex store is initialized with the module. This makes it possible to use all Vuex store API in a regular way in the class methods of the world. 
+
+![picture alt](https://lh4.googleusercontent.com/ZZMR-MNXHHwkU7n9GH376yUcESZ3DnfzoAsrcAMuwoKEkiWAKf5m0yE_gwYHEaOFap20RGivrw6dXvFyTonW=w1922-h951-rw "Using Vuex in world.js")
+
+This architecture is aimed to provide a simple to understand and use environment for learning BDD using Vuejs. A full featured, advanced environment is omitted on purpose. Why? To simplify the flow, and focus on one thing! That is understanding how user stories, features and test driven development works. The goal is to get a firm grasp of the concepts behind developing apps based on BDD.
 
 As Vuex is used to manage the state of the application, it can be very tricky to test actions, since they can be async operations. In order to account for this in the most simplistic way, this architecture is used. Using `Promise` and `async/await` features, async actions can be easily tested. 
-![picture alt](https://lh6.googleusercontent.com/TM4VZO0Ff-kcB3KsEbQkdTaii-U5R0hLwKNF22Pui0-UWqCeeSVQcQjP5_7W_25X8FimFXxAAidEPii66X3U=w1922-h951-rw "Async testing methodology")
+![picture alt](https://lh5.googleusercontent.com/EbGiznjueIz3D7lGHeOsDOZ2p6YG3jzzNgFlqVvnJuLSCCoGuHNmoltx-3UNGfy3ePDih_M4Nadi9buYNX28=w1922-h951-rw "Async testing methodology")
 
 ## Documentation
 
