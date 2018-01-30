@@ -1,7 +1,16 @@
 # vue-bdd-boilerplate
 
+A template to develop applications in BDD method using Cucumber. A perfect place to get you started in learning test driven development :rocket:.
+
+
 > A full-featured Webpack setup based on vuejs-templates/webpack.
 > This template is Vue 2.0 compatible.
+
+## Architecture/Concept
+This architecture is aimed to provide a simple to understand and use environment for learning BDD using Vuejs. A full featured, advanced environment is omitted on purpose. Why? To simplify the flow, and focus on one thing! That is understanding how user stories, features and test driven development works. The goal is to get a firm grasp of the concepts behind developing apps based on BDD..
+
+As Vuex is used to manage the state of the application, it can be very tricky to test actions, since they can be async operations. In order to account for this in the most simplistic way, this architecture is used. Using `Promise` and `async/await` features, async actions can be easily tested. 
+![picture alt](https://lh6.googleusercontent.com/TM4VZO0Ff-kcB3KsEbQkdTaii-U5R0hLwKNF22Pui0-UWqCeeSVQcQjP5_7W_25X8FimFXxAAidEPii66X3U=w1922-h951-rw "Async testing methodology")
 
 ## Documentation
 
