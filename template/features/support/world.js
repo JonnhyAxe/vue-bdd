@@ -29,6 +29,7 @@ class CustomWorld {
     this.store.dispatch('base/increment', number);
   }
 
+  // async function, so it needs to return
   getMessages() {
     return this.store.dispatch('base/getMessages');
   }

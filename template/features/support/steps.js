@@ -23,7 +23,7 @@ Then('the variable should contain {int}', function(number) {
 Given('an array with length set to {int}', function(number) {
   this.setArray();
 });
-
+// async step
 When('I send a get message request', async function() {
   await this.getMessages();
 });

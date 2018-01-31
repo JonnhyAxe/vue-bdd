@@ -11,6 +11,7 @@ const actions = {
   getMessages: async (context) => {
     const msgs = await apiModule.fetchMessages();
     context.commit('MESSAGES_UPDATED', msgs);
+    // here a dummy promise is returned to make the await async functions work
     return new Promise(resolve => {
       resolve();
     });
